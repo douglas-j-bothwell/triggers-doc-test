@@ -2,7 +2,8 @@
   - [Define a Webhook Trigger](https://douglas-j-bothwell.github.io/triggers-doc-test/define-a-webhook-trigger)
   - [Webhook Trigger Configuration](https://douglas-j-bothwell.github.io/triggers-doc-test/webhook-trigger-configuration)
   - [Webhook Trigger Conditions](https://douglas-j-bothwell.github.io/triggers-doc-test/webhook-trigger-conditions)
-  - [Webhook Trigger Inputs](https://douglas-j-bothwell.github.io/triggers-doc-test/webhook-trigger-inputs)
+  - [Webhook Trigger Expressions and Operators](https://douglas-j-bothwell.github.io/triggers-doc-test/webhook-trigger-expressions)
+	- [Webhook Trigger Inputs](https://douglas-j-bothwell.github.io/triggers-doc-test/webhook-trigger-inputs)
 
 
 # Webhook Trigger Conditions
@@ -13,17 +14,9 @@ Topics discussed:
 
 - [Conditions are ANDs](#conditions-are-ands)
 - [Source and Target Branch](#source-and-target-branch)
-- [Built-in Git Trigger and Payload Expressions](#built-in-git-trigger-and-payload-expressions)
-- [Main Expressions](#main-expressions)
-- [PR and Issue Comment Expressions](#pr-and-issue-comment-expressions)
-- [Push Expressions](#push-expressions)
 - [Header Conditions](#header-conditions)
 - [Payload Conditions](#payload-conditions)
 - [Referencing Payload Fields](#referencing-payload-fields)
-- [JEXL Expressions](#jexl-expressions)
-- [Operators](#operators)
-
-
 
 #### Conditions are ANDs
 
@@ -49,41 +42,6 @@ For example:
 *   Target Branch equals `main`
 
 ![](https://files.helpdocs.io/i5nl071jo5/articles/rset0jry8q/1613776102338/image.png)
-
-#### Built-in Git Trigger and Payload Expressions
-
-Harness includes built-in expressions for referencing trigger details such as a PR number.
-
-##### Main Expressions
-
-*   `<+trigger.type>`
-    *   Webhook.
-*   `<+trigger.sourceRepo>`
-    *   Github, Gitlab, Bitbucket, Custom
-*   `<+trigger.event>`
-    *   PR, PUSH, etc.
-
-##### PR and Issue Comment Expressions
-
-*   `<+trigger.targetBranch>`
-*   `<+trigger.sourceBranch>`
-*   `<+trigger.prNumber>`
-*   `<+trigger.prTitle>`
-*   `<+trigger.gitUser>`
-*   `<+trigger.repoUrl>`
-*   `<+trigger.commitSha>`
-*   `<+trigger.baseCommitSha>`
-*   `<+trigger.event>`
-    *   PR, PUSH, etc.
-
-##### Push Expressions
-
-*   `<+trigger.targetBranch>`
-*   `<+trigger.gitUser>`
-*   `<+trigger.repoUrl>`
-*   `<+trigger.commitSha>`
-*   `<+trigger.event>`
-    *   PR, PUSH, etc.
 
 #### Header Conditions
 
@@ -147,29 +105,3 @@ How you reference the path depends on a few things:
 
 *   There are different payloads for different events.
 *   Different Git providers send JSON payloads formatted differently, even for the same event. For example, a GitHub push payload might be formatted differently than a Bitbucket push payload. Always make sure the path you use works with the provider's payload format.
-
-#### JEXL Expressions
-
-You can refer to payload data and headers using [JEXL expressions](https://commons.apache.org/proper/commons-jexl/reference/syntax.html). That includes all constants, methods, and operators in [JexlOperator](https://commons.apache.org/proper/commons-jexl/apidocs/org/apache/commons/jexl3/JexlOperator.html).
-
-Be careful when you combine Harness variables and JEXL expressions.
-
-*   **Invalid expression:** `<+pipeline.variables.MAGIC.toLowerCase()>`  
-    This expression is ambiguous. It could be evaluated as a Harness variable (return the value of variable `pipeline.variables.MAGIC.toLowerCase()`) or as a JEXL operation (return the lowercase of literal string `pipeline.variables.MAGIC`).
-*   **Valid expression:** `<+<+pipeline.variables.MAGIC>.toLowerCase()>` First it gets the value of variable `pipeline.variables.MAGIC`. Then it returns the value converted to all lowercase.
-
-Here are some examples:
-
-*   `<+trigger.payload.pull_request.diff_url>.contains("triggerNgDemo")`
-*   `<+trigger.payload.pull_request.diff_url>.contains("triggerNgDemo") || <+trigger.payload.repository.owner.name> == "wings-software"`
-*   `<+trigger.payload.pull_request.diff_url>.contains("triggerNgDemo") && (<+trigger.payload.repository.owner.name> == "wings-software" || <+trigger.payload.repository.owner.name> == "harness")`
-
-#### Operators
-
-Some operators work on single values and some work on multiple values:
-
-**Single values:** `equals`, `not equals`, `starts with`, `ends with`, `regex`.
-
-**Multiple values:** `in`, `not in`.
-
-The **IN** and **NOT IN** operators don't support Regex.
