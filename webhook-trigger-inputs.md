@@ -1,9 +1,8 @@
-- [Webhook Triggers](https://douglas-j-bothwell.github.io/triggers-doc-test)
-  - [Define a Webhook Trigger](https://douglas-j-bothwell.github.io/triggers-doc-test/define-a-webhook-trigger)
+- [Define a Webhook Trigger](https://douglas-j-bothwell.github.io/triggers-doc-test/define-a-webhook-trigger)
   - [Webhook Trigger Configuration](https://douglas-j-bothwell.github.io/triggers-doc-test/webhook-trigger-configuration)
   - [Webhook Trigger Conditions](https://douglas-j-bothwell.github.io/triggers-doc-test/webhook-trigger-conditions)
   - [Webhook Trigger Expressions and Operators](https://douglas-j-bothwell.github.io/triggers-doc-test/webhook-trigger-expressions)
-	- [Webhook Trigger Inputs](https://douglas-j-bothwell.github.io/triggers-doc-test/webhook-trigger-inputs)
+  - Webhook Trigger Inputs
 
 
 # Webhook Trigger Inputs
@@ -15,12 +14,12 @@ You can use the [Built-in Git Payload Expressions](#built_in_git_trigger_and_pay
 
 See [Run Pipelines using Input Sets and Overlays](/article/gfk52g74xt-run-pipelines-using-input-sets-and-overlays).
 
-Topics discussed:
+##### Table of contents
 <!-- TOC depthFrom:3 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [Webhook](#webhook)
 - [Git Events Automatically Registered with Webhooks](#git-events-automatically-registered-with-webhooks)
-		- [GitHub](#github)
+- [GitHub](#github)
 - [GitLab](#gitlab)
 - [Bitbucket Cloud](#bitbucket-cloud)
 - [Bitbucket Server](#bitbucket-server)
