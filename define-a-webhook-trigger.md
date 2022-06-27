@@ -16,9 +16,17 @@ Harness supports many different types of Triggers for both CI and CD workflows. 
 ##### Table of contents
 
 - [Limitations](#limitations)
+- [Visual Summary](#visual-summary)
 - [Before You Begin](#before-you-begin)
 - [Define the Trigger](#define-the-trigger)
 - [Test the Trigger](#test-the-trigger)
+
+## Visual Summary
+
+Here's a two minute video showing you how to create and run a Trigger in response to Git events.
+
+<iframe  width="640"   height="480" src="https://www.youtube.com/embed/y8s351IJLXw"    frameborder="0"    allow="autoplay; encrypted-media"  allowfullscreen>
+</iframe>
 
 
 ## Limitations
@@ -53,9 +61,9 @@ To complete this workflow, you must have the following:
 
 ## Define the Trigger
 
-1) In the Pipeline Studio, go to the CI Pipeline where you want to define the Trigger.
+  1) In the Pipeline Studio, go to the CI Pipeline where you want to define the Trigger.
 
-2) Choose **Triggers** > **+ New Trigger** and select ond one of the webhook triggers such as GitHub. The New Webhook setup wizard appears.
+  2) Choose **Triggers** > **+ New Trigger** and select ond one of the webhook triggers such as GitHub. The New Webhook setup wizard appears.
 
 3) The New Webhook setup wizard has three tabs: Configure, Conditions, and Pipeline Inputs. Set up the Trigger as described in:
 
