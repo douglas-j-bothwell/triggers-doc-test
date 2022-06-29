@@ -96,9 +96,15 @@ To complete this workflow, you must have the following:
 
   2) Choose **Triggers** > **+ New Trigger** and select ond one of the webhook triggers such as GitHub. The New Webhook setup wizard appears.
 
-  3) The New Webhook setup wizard has three tabs: Configure, Conditions, and Pipeline Inputs. Set up the Trigger as described in in the following sections.
-  
+  3) The New Webhook setup wizard has three tabs: Configure, Conditions, and Pipeline Inputs. Set up the Trigger as described in in the following sections:
+
+    - [Webhook Trigger Configuration](https://douglas-j-bothwell.github.io/triggers-doc-test/webhook-trigger-configuration))
+    - [Webhook Trigger Conditions](https://douglas-j-bothwell.github.io/triggers-doc-test/webhook-trigger-conditions))
+    - [Webhook Trigger Expressions and Operators](https://douglas-j-bothwell.github.io/triggers-doc-test/webhook-trigger-expressions-and-operators))
+    - [Webhook Trigger Configuration](https://douglas-j-bothwell.github.io/triggers-doc-test/webhook-trigger-inputs))
+     
   4) Save and test the filter as described below.
+
   
 ###  Webhook Trigger Configuration
 <details>
