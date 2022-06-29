@@ -15,7 +15,7 @@ Harness supports many different types of Triggers for both CI and CD workflows. 
 
 ##### Watch a Video
 <details>
-  <summary>Click to see how you can create and run a Trigger in response to Git events.</summary>
+  <summary>Click here to see how you can create and run a Trigger in response to Git events.</summary>
 
 <iframe  width="640"  height="480" src="https://www.youtube.com/embed/y8s351IJLXw"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </iframe>
   
