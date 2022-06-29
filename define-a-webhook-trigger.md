@@ -14,7 +14,7 @@ All conditions in a Trigger are ANDed together into one filter, so an event must
 Harness supports many different types of Triggers for both CI and CD workflows. Triggers support the practice of every commit automatically building and/or deploying to a target environment. See [Triggers](https://ngdocs.harness.io/category/oya6qhmmaw).
 
 <details>
-  <summary>**Click to watch a video!**</summary>
+  <summary><h4>Click to watch a video!</h4></summary>
   
  Here's a two minute video showing you how to create and run a Trigger in response to Git events.
 
