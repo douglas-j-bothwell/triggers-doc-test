@@ -108,7 +108,7 @@ To complete this workflow, you must have the following:
 
 This topic describes the Configuration Tab of the Webhook Trigger setup wizard. 
 
-For steps on setting up different types of Triggers, see [Triggers Howtos](/category/oya6qhmmaw-trigger-category).
+<!-- For steps on setting up different types of Triggers, see [Triggers Howtos](/category/oya6qhmmaw-trigger-category).
 
 * **Name** The unique name for the Trigger.
 
@@ -166,6 +166,8 @@ Harness maps the success status, execution Id, and other information to this eve
 |||Pull Request Merged|
 |||Pull Request Declined|
 ||Push||
+
+-->
 
  </details>
 
