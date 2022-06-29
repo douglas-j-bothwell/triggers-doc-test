@@ -15,9 +15,10 @@ Harness supports many different types of Triggers for both CI and CD workflows. 
 
 ##### Watch a Video
 <details>
-  <summary>Click here to see how you can create and run a Trigger in response to Git events.</summary>
-
-<iframe  width="640"  height="480" src="https://www.youtube.com/embed/y8s351IJLXw"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </iframe>
+  <summary>Click to expand</summary>
+  
+  This video shows how you can create and run a Trigger in response to Git events.
+  <iframe  width="640"  height="480" src="https://www.youtube.com/embed/y8s351IJLXw"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </iframe>
   
 </details>
 
@@ -66,9 +67,12 @@ To complete this workflow, you must have the following:
 
   2) Choose **Triggers** > **+ New Trigger** and select ond one of the webhook triggers such as GitHub. The New Webhook setup wizard appears.
 
-3) The New Webhook setup wizard has three tabs: Configure, Conditions, and Pipeline Inputs. Set up the Trigger as described in:
+3) The New Webhook setup wizard has three tabs: Configure, Conditions, and Pipeline Inputs. Set up the Trigger as described in in the foll:
 
-- [Webhook Trigger Configuration](https://douglas-j-bothwell.github.io/triggers-doc-test/webhook-trigger-configuration)
+-  <details>
+  <summary>Webhook Trigger Configuration - click to expand</summary>
+  
+   </details>
 - [Webhook Trigger Conditions](https://douglas-j-bothwell.github.io/triggers-doc-test/webhook-trigger-conditions)
 - [Webhook Trigger Expressions and Operators](https://douglas-j-bothwell.github.io/triggers-doc-test/webhook-trigger-expressions)
 - [Webhook Trigger Inputs](https://douglas-j-bothwell.github.io/triggers-doc-test/webhook-trigger-inputs)
