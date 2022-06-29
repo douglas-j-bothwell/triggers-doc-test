@@ -23,13 +23,11 @@ Harness supports many different types of Triggers for both CI and CD workflows. 
 
 ##### Table of contents
 
-- [Limitations](#limitations)
+- [Important Notes](#important-notes)
 - [Visual Summary](#visual-summary)
 - [Before You Begin](#before-you-begin)
 - [Define the Trigger](#define-the-trigger)
 - [Test the Trigger](#test-the-trigger)
-
-
 
 
 ## Limitations
