@@ -13,6 +13,15 @@ All conditions in a Trigger are ANDed together into one filter, so an event must
 
 Harness supports many different types of Triggers for both CI and CD workflows. Triggers support the practice of every commit automatically building and/or deploying to a target environment. See [Triggers](https://ngdocs.harness.io/category/oya6qhmmaw).
 
+<details>
+  <summary>#####Click to watch a video!</summary>
+  
+ Here's a two minute video showing you how to create and run a Trigger in response to Git events.
+
+<iframe  width="640"  height="480" src="https://www.youtube.com/embed/y8s351IJLXw"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </iframe>
+  
+</details>
+
 ##### Table of contents
 
 - [Limitations](#limitations)
@@ -22,14 +31,7 @@ Harness supports many different types of Triggers for both CI and CD workflows. 
 - [Test the Trigger](#test-the-trigger)
 
 
-<details>
-  <summary>Click to watch a video!</summary>
-  
- Here's a two minute video showing you how to create and run a Trigger in response to Git events.
 
-<iframe  width="640"  height="480" src="https://www.youtube.com/embed/y8s351IJLXw"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </iframe>
-  
-</details>
 
 ## Limitations
 
