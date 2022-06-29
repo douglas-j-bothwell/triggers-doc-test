@@ -104,72 +104,71 @@ To complete this workflow, you must have the following:
 <details>
     <summary>Click to expand</summary>
  
-#### Webhook Trigger Configuration
+   #### Webhook Trigger Configuration
 
-This topic describes the Configuration Tab of the Webhook Trigger setup wizard. 
+   This topic describes the Configuration Tab of the Webhook Trigger setup wizard. 
 
-For steps on setting up different types of Triggers, see [Triggers Howtos](/category/oya6qhmmaw-trigger-category).
+   For steps on setting up different types of Triggers, see [Triggers Howtos](/category/oya6qhmmaw-trigger-category).
 
-* **Name** The unique name for the Trigger.
+   * **Name** The unique name for the Trigger.
 
-* **ID
+   * **ID
 
-See [Entity Identifier Reference](/article/li0my8tcz3-entity-identifier-reference).
+   See [Entity Identifier Reference](/article/li0my8tcz3-entity-identifier-reference).
 
-* **Description** Text string.
+   * **Description** Text string.
 
-* **Tags** See [Tags Reference](/article/i8t053o0sq-tags-reference).
+   * **Tags** See [Tags Reference](/article/i8t053o0sq-tags-reference).
 
-* **Payload Type** Git providers, such as GitHub, Bitbucket, and GitLab.
+   * **Payload Type** Git providers, such as GitHub, Bitbucket, and GitLab.
 
-* **Custom Payload type** To use a custom payload type, copy the secure token and add it to your custom Git provider. Whenever you regenerate a secure token, any preceding tokens become invalid. Update your Git provider with the new token.
+   * **Custom Payload type** To use a custom payload type, copy the secure token and add it to your custom Git provider. Whenever you regenerate a secure token, any preceding tokens become invalid. Update your Git provider with the new token.
 
-* **Connector** Select the Code Repo Connector that connects to your Git provider account. See [Code Repo Connectors Tech Ref](/category/xyexvcc206-ref-source-repo-provider).
+   * **Connector** Select the Code Repo Connector that connects to your Git provider account. See [Code Repo Connectors Tech Ref](/category/xyexvcc206-ref-source-repo-provider).
 
-* **Repository Name** Enter the name of the repo in the account.
+   * **Repository Name** Enter the name of the repo in the account.
 
-* **Event and Actions** Select the Git events and actions that will initiate the Trigger.
+   * **Event and Actions** Select the Git events and actions that will initiate the Trigger.
 
-#### Git Events and Actions 
+   #### Git Events and Actions 
 
-Harness uses your Harness account Id to map incoming events. Harness takes the incoming event and compares it to ALL triggers in the account.
+   Harness uses your Harness account Id to map incoming events. Harness takes the incoming event and compares it to ALL triggers in the account.
 
-You can see the event Id that Harness mapped to a Trigger in the Webhook's event response body `data`:
+   You can see the event Id that Harness mapped to a Trigger in the Webhook's event response body `data`:
 
-`{"status":"SUCCESS","data":"60da52882dc492490c30649e","metaData":null,...`
+   `{"status":"SUCCESS","data":"60da52882dc492490c30649e","metaData":null,...`
 
-Harness maps the success status, execution Id, and other information to this event Id.
+   Harness maps the success status, execution Id, and other information to this event Id.
 
-||||
-|--- |--- |--- |
-|<b>Payload Type</b>|<b>Event</b>|<b>Action</b>|
-|Github|Pull Request|Closed|
-|||Edited|
-|||Labeled|
-|||Opened|
-|||Reopened|
-|||Synchronized|
-|||Unassigned|
-|||UnLabeled|
-||Push|n/a|
-||Issue Comment Only comments on a pull request are supported.|Created|
-|||Deleted|
-|||Edited|
-|GitLab|Push|N/A|
-||Merge Request|Sync|
-|||Open|
-|||Close|
-|||Reopen|
-|||Merge|
-|||Update|
-|Bitbucket|On Pull Request|Pull Request Created|
-|||Pull Request Merged|
-|||Pull Request Declined|
-||Push||
+   ||||
+   |--- |--- |--- |
+   |<b>Payload Type</b>|<b>Event</b>|<b>Action</b>|
+   |Github|Pull Request|Closed|
+   |||Edited|
+   |||Labeled|
+   |||Opened|
+   |||Reopened|
+   |||Synchronized|
+   |||Unassigned|
+   |||UnLabeled|
+   ||Push|n/a|
+   ||Issue Comment Only comments on a pull request are supported.|Created|
+   |||Deleted|
+   |||Edited|
+   |GitLab|Push|N/A|
+   ||Merge Request|Sync|
+   |||Open|
+   |||Close|
+   |||Reopen|
+   |||Merge|
+   |||Update|
+   |Bitbucket|On Pull Request|Pull Request Created|
+   |||Pull Request Merged|
+   |||Pull Request Declined|
+   ||Push||
 
  </details>
 
-<!-- 
 ###  Webhook Trigger Conditions
  <details>
      <summary>Click to expand</summary>
@@ -274,12 +273,13 @@ Harness maps the success status, execution Id, and other information to this eve
     *   There are different payloads for different events.
     *   Different Git providers send JSON payloads formatted differently, even for the same event. For example, a GitHub push payload might be formatted differently than a Bitbucket push payload. Always make sure the path you use works with the provider's payload format.
 
+</details>
 
 
 ###  Webhook Trigger Expressions and Operators
  <details>
      <summary>Click to expand</summary>
- 
+< 
  #### Webhook Trigger Expressions and Operators
 
  This topic describes how to define the conditions that cause a Webhook Trigger to start a build. Harness triggers are highly configurable and flexible. For example, you can trigger builds based on specific header values, payload values, tag conventions, and changes in specific files or Pull Requests. 
@@ -422,8 +422,6 @@ Harness maps the success status, execution Id, and other information to this eve
  *   Branch push tag
 
 </details>
-
--->
 
 
 
