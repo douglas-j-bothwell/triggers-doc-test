@@ -104,7 +104,6 @@ To complete this workflow, you must have the following:
 <details>
     <summary>Click to expand</summary>
  
-#### Webhook Trigger Configuration
 
 This topic describes the Configuration Tab of the Webhook Trigger setup wizard. 
 
@@ -130,9 +129,8 @@ See [Entity Identifier Reference](/article/li0my8tcz3-entity-identifier-referenc
 
 * **Event and Actions** Select the Git events and actions that will initiate the Trigger.
 
-<!-- 
 
-#### Git Events and Actions 
+**Git Events and Actions** 
 
 Harness uses your Harness account Id to map incoming events. Harness takes the incoming event and compares it to ALL triggers in the account.
 
@@ -171,7 +169,7 @@ Harness maps the success status, execution Id, and other information to this eve
 |||Pull Request Declined|
 ||Push||
 
--->
+
 
  </details>
 
