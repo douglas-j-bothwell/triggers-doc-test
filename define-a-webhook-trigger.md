@@ -108,7 +108,7 @@ To complete this workflow, you must have the following:
 
 This topic describes the Configuration Tab of the Webhook Trigger setup wizard. 
 
-<!-- For steps on setting up different types of Triggers, see [Triggers Howtos](/category/oya6qhmmaw-trigger-category).
+For steps on setting up different types of Triggers, see [Triggers Howtos](/category/oya6qhmmaw-trigger-category).
 
 * **Name** The unique name for the Trigger.
 
@@ -140,6 +140,8 @@ You can see the event Id that Harness mapped to a Trigger in the Webhook's event
 
 Harness maps the success status, execution Id, and other information to this event Id.
 
+<!-- 
+  
 ||||
 |--- |--- |--- |
 |<b>Payload Type</b>|<b>Event</b>|<b>Action</b>|
