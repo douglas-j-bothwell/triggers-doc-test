@@ -30,7 +30,7 @@ Harness supports many different types of Triggers for both CI and CD workflows. 
 - [Test the Trigger](#test-the-trigger)
 
 
-## Limitations
+## Important Notes
 
 *   Currently, Harness supports Git-based Triggers for the most common Git providers. Harness includes a Custom Trigger for other repo providers.
 *   The **IN** and **NOT IN** operators do not support Regex.
