@@ -26,6 +26,36 @@ Harness supports many different types of Triggers for both CI and CD workflows. 
 
   - [Important Notes](#important-notes)
   - [Before You Begin](#before-you-begin)
+  - [Define the Trigger](#define-the-trigger)
+    - [Webhook Trigger Configuration](#webhook-trigger-configuration)
+      - [Webhook Trigger Configuration](#webhook-trigger-configuration)
+      - [Git Events and Actions](#git-events-and-actions)
+    - [Webhook Trigger Conditions](#webhook-trigger-conditions)
+      - [Webhook Trigger Conditions](#webhook-trigger-conditions)
+      - [Table of contents](#table-of-contents)
+      - [Conditions are ANDs](#conditions-are-ands)
+      - [Source and Target Branch](#source-and-target-branch)
+      - [Header Conditions](#header-conditions)
+      - [Payload Conditions](#payload-conditions)
+      - [Referencing Payload Fields](#referencing-payload-fields)
+    - [Webhook Trigger Expressions and Operators](#webhook-trigger-expressions-and-operators)
+      - [Webhook Trigger Expressions and Operators](#webhook-trigger-expressions-and-operators)
+      - [Table of contents](#table-of-contents)
+      - [Built-in Git Trigger and Payload Expressions](#built-in-git-trigger-and-payload-expressions)
+      - [Main Expressions](#main-expressions)
+      - [PR and Issue Comment Expressions](#pr-and-issue-comment-expressions)
+      - [Push Expressions](#push-expressions)
+      - [JEXL Expressions](#jexl-expressions)
+      - [Operators](#operators)
+    - [Webhook Trigger Inputs](#webhook-trigger-inputs)
+      - [Webhook Trigger Inputs](#webhook-trigger-inputs)
+      - [Table of contents](#table-of-contents)
+      - [Webhook](#webhook)
+    - [Git Events Automatically Registered with Webhooks](#git-events-automatically-registered-with-webhooks)
+      - [GitHub](#github)
+      - [GitLab](#gitlab)
+      - [Bitbucket Cloud](#bitbucket-cloud)
+      - [Bitbucket Server](#bitbucket-server)
   - [Test the Trigger](#test-the-trigger)
   - [See Also](#see-also)
 
@@ -62,20 +92,19 @@ To complete this workflow, you must have the following:
 
 ## Define the Trigger
 
-1) In the Pipeline Studio, go to the CI Pipeline where you want to define the Trigger.
+  1) In the Pipeline Studio, go to the CI Pipeline where you want to define the Trigger.
 
-2) Choose **Triggers** > **+ New Trigger** and select ond one of the webhook triggers such as GitHub. The New Webhook setup wizard appears.
+  2) Choose **Triggers** > **+ New Trigger** and select ond one of the webhook triggers such as GitHub. The New Webhook setup wizard appears.
 
-3) The New Webhook setup wizard has three tabs: Configure, Conditions, and Pipeline Inputs. Set up the Trigger as described in in the following sections:
+  3) The New Webhook setup wizard has three tabs: Configure, Conditions, and Pipeline Inputs. Set up the Trigger as described in in the following sections:
 
    - [Webhook Trigger Configuration](https://douglas-j-bothwell.github.io/triggers-doc-test/webhook-trigger-configuration)
    - [Webhook Trigger Conditions](https://douglas-j-bothwell.github.io/triggers-doc-test/webhook-trigger-conditions)
    - [Webhook Trigger Expressions and Operators](https://douglas-j-bothwell.github.io/triggers-doc-test/webhook-trigger-expressions-and-operators)
    - [Webhook Trigger Configuration](https://douglas-j-bothwell.github.io/triggers-doc-test/webhook-trigger-inputs)
      
-4) Save and test the filter as described below.
-
-<!-- 
+  4) Save and test the filter as described below.
+ 
   
 ###  Webhook Trigger Configuration
 <details>
@@ -403,9 +432,6 @@ Harness maps the success status, execution Id, and other information to this eve
  *   Branch push tag
 
 </details>
-
--->
-
 
 
 ## Test the Trigger
