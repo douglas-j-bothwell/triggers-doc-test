@@ -105,6 +105,7 @@ To complete this workflow, you must have the following:
      
   4) Save and test the filter as described below.
 
+<!-- 
   
 ###  Webhook Trigger Configuration
 <details>
@@ -179,7 +180,7 @@ Harness maps the success status, execution Id, and other information to this eve
 
  </details>
 
-<!-- 
+
 ###  Webhook Trigger Conditions
  <details>
      <summary>Click to expand</summary>
